@@ -1,18 +1,13 @@
 //OLD JAVASCRIPT
-var counter = 5;
 
-function sayName(){
-   var name = "Abir"
-   name = "Abir Hasan"
-   console.log(name);
+const name = ['Abir', 'Hasan', 'Saif']
+for (i = 1; i < name.length; i++){
+    console.log(name);
 }
-sayName();
 
 //ES6
+const nameES6 = ['Abir', 'Hasan', 'Saif']
+for(i = 0; i < name.length; i++){
 
-function sayNameES6(){
-    const name2 = "Abir"
-    name2 = "Abir Hasan"
-    console.log(name2);
 }
-sayNameES6();
+console.log(name);
