@@ -1,21 +1,18 @@
 //OLD JAVASCRIPT
 
-function getBook(title, author){
-    return{
-        author: author,
-        title: title
-    };
+var user = {
+    name: "Abir",
+    age: 23
 }
-var book = getBook("Harry Potter", "Abir");
-console.log(book);
+
+var userAge = user.age;
+console.log(userAge)
+
 //ES6
+var userES6 = {
+    name: ['Abir','Hasan','Saif'],
+    age: [21,23,24]
+};
 
-function getBusDetailsES6(Bus, Name){
-    return{
-       Bus,
-       Name
-    };
-}
-
-var getBusDetails = getBusDetailsES6("National","Express");
-console.log(getBusDetails)
+const {name, age} = userES6;
+console.log(name, age);
