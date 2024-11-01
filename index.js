@@ -1,11 +1,21 @@
 //OLD JAVASCRIPT
-var name = "Abir";
 
-console.log("My Name Is " + name + ".")
-
-
+function getBook(title, author){
+    return{
+        author: author,
+        title: title
+    };
+}
+var book = getBook("Harry Potter", "Abir");
+console.log(book);
 //ES6
 
-var nameES6 = "Abir Hasan"
+function getBusDetailsES6(Bus, Name){
+    return{
+       Bus,
+       Name
+    };
+}
 
-console.log(`My name is ${nameES6}`);
+var getBusDetails = getBusDetailsES6("National","Express");
+console.log(getBusDetails)
