@@ -1,29 +1,15 @@
 //OLD JAVASCRIPT
-var user = {
-    name: "Abir",
-    age: 23,
-    sayName: function(){
-        console.log(`My Name is ${this.name}`)
-        var that = this;
-        var fullName = function(){
-            console.log(`My name is ${that.name} and My Age is ${that.age}`); 
-        }
-        fullName();
-    }
-};
-user.sayName();
+
+function multiply(a,b) {
+var x =  a || 10;
+var y =  b || 10;
+console.log(x*y);
+}
+multiply(100, 100);
 
 //ES6
 
-var userTwo = {
-    name: 'Abir',
-    age: 23,
-    sayNameTwo: function(){
-        console.log(`My name is ${this.name}`);
-        const fullNameTwo = () => {
-            console.log(`My Name is ${this.name} and My Age is ${this.age}`);
-        }
-        fullNameTwo();
-    }
-}
-userTwo.sayNameTwo();
+const multiplyTwo = (a = 10, b = 10) => {
+console.log(a*b);
+} 
+multiplyTwo(100);
