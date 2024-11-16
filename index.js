@@ -1,18 +1,28 @@
 //OLD JAVASCRIPT
 
-var user = {
-    name: "Abir",
-    age: 23
+function sayName(){
+    console.log("My name is Abir");
 }
 
-var userAge = user.age;
-console.log(userAge)
+var sayAge = function(){
+    console.log("Age is Just a Number");
+}
+sayAge();
+sayName();
 
 //ES6
-var userES6 = {
-    name: ['Abir','Hasan','Saif'],
-    age: [21,23,24]
-};
 
-const {name, age} = userES6;
-console.log(name, age);
+const myLocation = () => {
+    console.log("My Location is Unknown");
+};
+myLocation();
+
+const myLocationTwo = location => {
+    console.log(`My Location is ${location}`);
+}
+myLocationTwo("Paris");
+
+const myLocationThree = location => 
+    console.log(`My Location is ${location}`);
+//Without bracket/parenthesis when only one parameter 
+myLocationThree("London")
