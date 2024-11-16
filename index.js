@@ -1,15 +1,19 @@
 //OLD JAVASCRIPT
 
-function multiply(a,b) {
-var x =  a || 10;
-var y =  b || 10;
-console.log(x*y);
-}
-multiply(100, 100);
+
 
 //ES6
 
-const multiplyTwo = (a = 10, b = 10) => {
-console.log(a*b);
-} 
-multiplyTwo(100);
+shoppingList = ["Cow","Cat","Milk"];
+
+//forEach Loop {Just Go Through Each Items}
+shoppingList.forEach(product =(product, index)=>{
+    console.log(`Product is ${product} and Index is ${index} +  Nice Choice`)
+});
+
+//Map 
+const shoppingListTwo = shoppingList.map(product =>{
+    return console.log(`Product is ${product} New`)
+})
+
+const shoppingListThree = shoppingList.map(product => console.log(`Product is ${product} Very New`))
