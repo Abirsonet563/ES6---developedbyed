@@ -17,3 +17,11 @@ const shoppingListTwo = shoppingList.map(product =>{
 })
 
 const shoppingListThree = shoppingList.map(product => console.log(`Product is ${product} Very New`))
+
+const filter = shoppingList.filter(item =>{
+    return item === "Cat";
+});
+console.log(filter);
+
+const filterListTwo = shoppingList.filter(item => item !== "Cat")
+console.log(filterListTwo)
